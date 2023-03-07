@@ -17,7 +17,7 @@ header{
     align-items: center;
     flex-direction: column;
 
-    height: 40vh;
+    height: 30vh;
 }
 
 .titulo{
@@ -51,7 +51,6 @@ main p{
 
 .telefono{
     font-size: 0.9rem;
-    text-decoration: none;
 }
 
 

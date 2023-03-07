@@ -53,4 +53,16 @@ main p{
     font-size: 0.9rem;
 }
 
+.nombreChico{
+    text-align: center;
+}
+
+section h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 255, 100);
+}
 

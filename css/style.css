@@ -17,7 +17,7 @@ header{
     align-items: center;
     flex-direction: column;
 
-    height: 30vh;
+    height: 40vh;
 }
 
 .titulo{
@@ -36,7 +36,6 @@ main{
 
 main p{
     font-family: 'Tajawal', sans-serif;
-    font-size: 1rem;
 }
 
 .mail{
@@ -50,6 +49,9 @@ main p{
     color: rgb(0, 255, 100);
 }
 
-
+.telefono{
+    font-size: 0.9rem;
+    text-decoration: none;
+}
 
 

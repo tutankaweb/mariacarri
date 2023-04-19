@@ -1,68 +1,163 @@
-/* Normalize */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --gris: #f1f1f1;
+    --negro: #2C3639;
+    --verde: #6ae13a;
+    --azul: #002FA7;
+}
+
 
 body{
-    overflow: hidden;
-    padding: 30px;
-}
-
-header{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
-    height: 30vh;
+    gap: 6vh;
+    margin: 5.3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: var(--gris);
+    overflow-x: hidden;
 }
 
-.titulo{
-    font-family: 'Tajawal', sans-serif;
-    font-weight: 400;
-    font-size: 2.2rem;
-}
 
-main{
-    height: 70vh;
+.headermail{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: baseline;
 }
 
-main p{
-    font-family: 'Tajawal', sans-serif;
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--negro);
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-top: 5vh;
 }
+
+header span{
+    color: var(--verde);
+}
+
+header a{
+    margin-left: 3vh;
+    margin-bottom: 3vh;
+}
+
+.subtitulos{
+    font-size: 1.8rem;
+}
+
+
+.section1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: var(--negro);
+    text-align: justify;
+    margin-bottom: 2vh;
+}
+
+
+article p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color:var(--negro);
+}
+
+article a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--verde);
+}
+
+article a:hover{
+    color: var(--azul);
+}
+
+article h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color:var(--negro);
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 2vh;
+}
+
+footer a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: var(--negro);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+footer a:hover{
+    color: var(--verde);
+}
+
+footer p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--verde);
+}
+
+.line{
+    background-color: var(--negro);
+    width: 100%;
+    height: 0.3px;
+}
+
+.lineverde{
+    background-color: var(--verde);
+    width: 100%;
+    height: 0.3px;
+}
+
 
 .mail{
-    color: black;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 1rem;
+    color: var(--negro);
+    font-size: 1.3rem;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: end;
 }
 
 .mail:hover{
-    color: rgb(0, 255, 100);
+    color: var(--verde);
 }
 
-.telefono{
-    font-size: 0.9rem;
-}
 
-.nombreChico{
-    text-align: center;
-}
+.italic{
+    font-style: italic;
+ }
 
-section h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 1.2rem;
-    color: rgb(0, 255, 100);
-}
 
+@media (max-width:867px) {
+
+    .section1{
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+        -webkit-columns: 250px 1;
+        }
+    .mail{
+        font-size: 1.5rem;
+    }
+    footer a{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    }

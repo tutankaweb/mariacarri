@@ -87,6 +87,10 @@ article h3{
     text-decoration: underline;
 }
 
+article + article {
+    margin-top: 2vh;
+}
+
 
 footer{
     display: flex;
